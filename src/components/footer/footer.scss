@@ -1,0 +1,8 @@
+@import './../../scss/variables.scss';
+
+footer {
+  padding: #{$padding};
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #f5f5f5;
+}

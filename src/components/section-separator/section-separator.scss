@@ -1,0 +1,18 @@
+@import './../../scss/variables.scss';
+.ssss {
+  display: inline-block;
+  height: 1vh;
+  flex-grow: 1;
+  &.light {
+    background: lighten($accentColor, 10%);
+  }
+  &.normal {
+    background: $accentColor;
+  }
+  &.light-dark {
+    background: darken($accentColor, 10%);
+  }
+  &.dark {
+    background: darken($accentColor, 20%);
+  }
+}

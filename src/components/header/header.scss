@@ -1,0 +1,19 @@
+@import './../../scss/variables.scss';
+
+.item {
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 1rem;
+  padding-left: unset;
+  padding-right: unset;
+  &.selected::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 3px;
+    background: $accentColor;
+    margin-top: -5px;
+  }
+}

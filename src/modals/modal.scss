@@ -1,0 +1,63 @@
+@import './../scss/variables.scss';
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  min-height: 50%;
+  background: white;
+
+  z-index: 100000;
+
+  &.open {
+    display: initial;
+  }
+
+  .modal-header {
+    background: $accentColor;
+    color: white;
+    .modal-close {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 100%;
+      }
+    }
+  }
+  .modal-body {
+    .profile {
+      background: #e0e0e0;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+}
+.modal-background {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.75;
+
+  z-index: 1000;
+
+  &.open {
+    display: initial;
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
